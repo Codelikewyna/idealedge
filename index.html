@@ -1,0 +1,752 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <title>Ideal Edge Investment</title>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
+    <link rel="stylesheet" href="assets/css/animated.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    
+    <style>
+        /* Responsive Improvements for Larger Screens */
+        
+        /* Container max-width for better desktop experience */
+        @media (min-width: 1400px) {
+            .container {
+                max-width: 1320px;
+            }
+        }
+        
+        /* Header improvements */
+        @media (min-width: 992px) {
+            .header-area .main-nav .logo h4 {
+                font-size: 24px;
+            }
+            
+            .header-area .main-nav ul.nav li a {
+                font-size: 15px;
+                padding: 0px 15px;
+            }
+            
+            .header-area .main-nav .main-red-button {
+                margin-left: 20px;
+            }
+        }
+        
+        /* Main banner improvements */
+        @media (min-width: 992px) {
+            .main-banner {
+                padding: 120px 0px;
+            }
+            
+            .main-banner .left-content h6 {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            
+            .main-banner .left-content h2 {
+                font-size: 48px;
+                line-height: 58px;
+                margin-bottom: 25px;
+            }
+            
+            .main-banner .left-content p {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 35px;
+            }
+            
+            .main-banner .right-image img {
+                max-width: 100%;
+                height: auto;
+            }
+        }
+        
+        @media (min-width: 1400px) {
+            .main-banner .left-content h2 {
+                font-size: 56px;
+                line-height: 66px;
+            }
+        }
+        
+        /* About section improvements */
+        @media (min-width: 992px) {
+            .about-us {
+                padding: 100px 0px;
+            }
+            
+            .about-us .services .item {
+                margin-bottom: 40px;
+                padding: 30px;
+            }
+            
+            .about-us .services .item .icon img {
+                max-width: 60px;
+            }
+            
+            .about-us .services .item .right-text h4 {
+                font-size: 20px;
+                margin-bottom: 15px;
+            }
+            
+            .about-us .services .item .right-text p {
+                font-size: 15px;
+                line-height: 25px;
+            }
+        }
+        
+        /* Services section improvements */
+        @media (min-width: 992px) {
+            .our-services {
+                padding: 100px 0px;
+            }
+            
+            .our-services .section-heading h2 {
+                font-size: 40px;
+                line-height: 50px;
+                margin-bottom: 25px;
+            }
+            
+            .our-services .section-heading p {
+                font-size: 16px;
+                line-height: 28px;
+                margin-bottom: 40px;
+            }
+            
+            .our-services .progress-skill-bar {
+                margin-bottom: 30px;
+            }
+            
+            .our-services .progress-skill-bar h4 {
+                font-size: 16px;
+                margin-bottom: 15px;
+            }
+            
+            .our-services .video-container {
+                border-radius: 20px;
+                overflow: hidden;
+            }
+            
+            .our-services .custom-video {
+                width: 100%;
+                height: auto;
+                min-height: 400px;
+                object-fit: cover;
+            }
+        }
+        
+        /* Blog section improvements */
+        @media (min-width: 992px) {
+            
+            
+            .our-blog .section-heading h2 {
+                font-size: 40px;
+                line-height: 50px;
+                margin-bottom: 60px;
+            }
+            
+            .our-blog .left-image {
+                margin-bottom: 60px; /* Increased margin-bottom to prevent overlap */
+                min-height: 400px; /* Ensure enough space for image and content */
+                position: relative;
+            }
+            
+            .our-blog .left-image img {
+                width: 100%;
+                border-radius: 20px;
+            }
+            
+            .our-blog .left-image .info {
+                padding: 30px;
+            }
+            
+            .our-blog .left-image .info .inner-content h4 {
+                font-size: 20px;
+                line-height: 30px;
+                margin-bottom: 30px; /* Increased margin-bottom for text spacing */
+            }
+            
+            .our-blog .left-image .info .inner-content p {
+                font-size: 15px;
+                line-height: 25px;
+                margin-bottom: 25px;
+            }
+        }
+        
+        /* Portfolio section improvements */
+        @media (min-width: 992px) {
+            .our-portfolio {
+                padding: 100px 0px;
+            }
+            
+            .our-portfolio .section-heading h2 {
+                font-size: 40px;
+                line-height: 50px;
+                margin-bottom: 60px;
+                text-align: center;
+            }
+            
+            .our-portfolio .item {
+                margin-bottom: 30px;
+            }
+            
+            .our-portfolio .testimony {
+                width: 100%;
+                height: auto;
+                transition: transform 0.3s ease;
+            }
+            
+            .our-portfolio .item:hover .testimony {
+                transform: scale(1.05);
+            }
+        }
+        
+        /* Contact section improvements */
+        @media (min-width: 992px) {
+            .contact-us {
+                padding: 100px 0px;
+            }
+            
+            .contact-us .section-heading h2 {
+                font-size: 40px;
+                line-height: 50px;
+                margin-bottom: 30px;
+            }
+            
+            .contact-us .phone-info h4 {
+                font-size: 16px;
+                line-height: 26px;
+            }
+            
+            .contact-us form {
+                padding: 40px;
+                background: rgba(255, 255, 255, 0.1);
+                border-radius: 20px;
+                backdrop-filter: blur(10px);
+            }
+            
+            .contact-us form fieldset {
+                margin-bottom: 25px;
+            }
+            
+            .contact-us form input,
+            .contact-us form textarea {
+                padding: 15px 20px;
+                font-size: 15px;
+                border-radius: 10px;
+            }
+            
+            .contact-us form textarea {
+                min-height: 120px;
+                resize: vertical;
+            }
+            
+            .contact-us .main-button {
+                padding: 15px 30px;
+                font-size: 16px;
+                border-radius: 10px;
+            }
+        }
+        
+        /* Footer improvements */
+        @media (min-width: 992px) {
+            footer {
+                padding: 40px 0px;
+            }
+            
+            footer p {
+                font-size: 15px;
+                line-height: 25px;
+                text-align: center;
+            }
+        }
+        
+        /* General spacing improvements for large screens */
+        @media (min-width: 1200px) {
+            .section {
+                padding: 120px 0px;
+            }
+        }
+        
+        /* Ultra-wide screen optimizations */
+        @media (min-width: 1600px) {
+            .container {
+                max-width: 1400px;
+            }
+            
+            .main-banner .left-content h2 {
+                font-size: 64px;
+                line-height: 74px;
+            }
+            
+            .section-heading h2 {
+                font-size: 48px;
+                line-height: 58px;
+            }
+        }
+        
+        /* Ensure proper image scaling */
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        /* Smooth scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        /* Better button hover effects for desktop */
+        @media (min-width: 992px) {
+            .main-red-button a,
+            .main-blue-button a,
+            .main-button {
+                transition: all 0.3s ease;
+            }
+            
+            .main-red-button a:hover,
+            .main-blue-button a:hover,
+            .main-button:hover {
+                transform: translateY(-2px);
+                box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Preloader -->
+    <div id="js-preloader" class="js-preloader">
+        <div class="preloader-inner">
+            <span class="dot"></span>
+            <div class="dots">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <a href="index.html" class="logo">
+                            <h4>Ideal<span>Edge</span> <img src="assets/images/idealedge-tp-logo.png" id="mainlogo"></h4>
+                        </a>
+                        <ul class="nav">
+                            <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+                            <li class="scroll-to-section"><a href="#about">About Us</a></li>
+                            <li class="scroll-to-section"><a href="#services">Why Us?</a></li>
+                            <li class="scroll-to-section"><a href="#portfolio">Testimonials</a></li>
+                            <li class="scroll-to-section"><a href="#blog">Our Services</a></li>
+                            <li class="scroll-to-section"><a href="#contact">Message Us</a></li>
+                           <!-- <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Contact Now</a></div></li> -->
+                        </ul>
+                        <a class="menu-trigger">
+                            <span>Menu</span>
+                        </a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Banner -->
+    <div class="main-banner wow fadeIn" id="top" data-wow-duration="1s" data-wow-delay="0.5s">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="row">
+                        <div class="col-lg-6 align-self-center">
+                            <div class="left-content header-text wow fadeInLeft" data-wow-duration="1s" data-wow-delay="1s">
+                                <h6>Welcome to Ideal Edge Investment</h6>
+                                <h2>An <em>Edge</em> <span>Above</span> Others</h2>
+                                <p>You deserve a partner. Over the years, we have built a reputation for excellence, integrity, and innovation, consistently raising the bar in every industry we operate in.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="right-image wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.5s">
+                                <img src="assets/images/banner-right-image.png" alt="team meeting">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Us -->
+    <div id="about" class="about-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                       
+                    </div>
+                </div>
+                <div class="col-lg-8 align-self-center">
+                    <div class="services">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                                    <div class="icon">
+                                        <img src="assets/images/service-icon-01.png" alt="reporting">
+                                    </div>
+                                    <div class="right-text">
+                                        <h4>Professional</h4>
+                                        <p>Skilled experts, committed to top-quality execution. We provide complete support at every stage of your journey.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                                    <div class="icon">
+                                        <img src="assets/images/service-icon-02.png" alt="">
+                                    </div>
+                                    <div class="right-text">
+                                        <h4>Quality Assurance</h4>
+                                        <p>Every product meets rigorous quality standards. We partner only with certified suppliers and maintain strict quality control.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            
+                            <div class="col-lg-6">
+                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                                    <div class="icon">
+                                        <img src="assets/images/service-icon-03.png" alt="">
+                                    </div>
+                                    <div class="right-text">
+                                        <h4>Proven Track Record</h4>
+                                        <p>Our track record speaks for itself: hundreds of successful projects, satisfied clients, and measurable results across all service areas.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                                    <div class="icon">
+                                        <img src="assets/images/service-icon-04.png" alt="">
+                                    </div>
+                                    <div class="right-text">
+                                        <h4>Customer Centric</h4>
+                                        <p>Your success is our priority. We provide personalized solutions, dedicated account management, and ongoing support to ensure your satisfaction.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    
+
+    <!-- Our Services -->
+    <div id="services" class="our-services section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="left-image">
+                        <div class="video-container">
+                            <video autoplay loop muted class="custom-video" playsinline>
+                                <source src="assets/video/idealedgepromovideo.mp4" type="video/mp4">
+                                Your browser does not support the video tag.
+                            </video>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-duration="1s" data-wow-delay="0.2s">
+                    <div class="section-heading">
+                        <h2>Why <em>We</em> Are The <span>Best</span>?</h2>
+                        <p>Everyone can easily point out when something is wrong because the poor results are often right in front of us. But here's what sets us apart; We create the solution to problems.</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="first-bar progress-skill-bar">
+                                <h4>Client Satisfaction rate</h4>
+                                <span>94%</span>
+                                <div class="filled-bar"></div>
+                                <div class="full-bar"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="second-bar progress-skill-bar">
+                                <h4>Cost Efficiency</h4>
+                                <span>88%</span>
+                                <div class="filled-bar"></div>
+                                <div class="full-bar"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-12">
+                            <div class="third-bar progress-skill-bar">
+                                <h4>Return on Clients Investment</h4>
+                                <span>91%</span>
+                                <div class="filled-bar"></div>
+                                <div class="full-bar"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog -->
+    <div id="blog" class="our-blog section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <div class="section-heading">
+                        <h2>All The <em>Services</em> We Provide <span>For You</span></h2>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInDown" data-wow-duration="1s" data-wow-delay="0.25s">
+                    
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <div class="left-image">
+                        <img src="assets/images/service01.png" alt="Workspace Desktop">
+                        <div class="info">
+                            <div class="inner-content">
+                                <h4>MEDICAL EQUIPMENTS SUPPLY FOR All SPECIALTIES</h4>
+                                <p>We supply high-quality and advanced medical equipment to hospitals, laboratories and health institutions. Whether it's Neurology, General Surgery, Dentistry, Psychiatry, Gynecology, or any other specialty, we ensure you get reliable equipment that meets international standards.</p>
+                                <div class="main-blue-button">
+                                    <a href="services.html">Learn More & Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <div class="left-image">
+                        <img src="assets/images/service02.png" alt="Workspace Desktop">
+                        <div class="info">
+                            <div class="inner-content">
+                                <h4>REAL ESTATE SERVICES</h4>
+                                <p>
+                                   Navigate the real estate market with confidence through our expert guidance. Whether buying, selling, or investing, we provide comprehensive real estate solutions backed by market expertise and unwavering commitment to your success.
+                                </p>
+                                <div class="main-blue-button">
+                                    <a href="">Learn More & Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <div class="left-image">
+                        <img src="assets/images/service03.png" alt="Workspace Desktop">
+                        <div class="info">
+                            <div class="inner-content">
+                                <h4>MARKETING SERVICES</h4>
+                                <p>
+                                    Elevate your business presence with our comprehensive marketing solutions. We specialize in increasing brand visibility, driving customer engagement, and boosting revenue through strategic campaigns across all major platforms.
+                                </p>
+                                <div class="main-blue-button">
+                                    <a href="#">Learn More & Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <div class="left-image">
+                        <img src="assets/images/service04.png" alt="Workspace Desktop">
+                        <div class="info">
+                            <div class="inner-content">
+                                <h4>                                    
+                                    EVENTS PACKAGING & MEDIA
+                                </h4>
+                                <p>
+                                    With our comprehensive event management services, from intimate gatherings to large-scale conferences, we handle every detail to ensure your event exceeds expectations.
+                                    We handle coperate events, school events, social events etc
+                                </p>
+                                <div class="main-blue-button">
+                                    <a href="#">Learn More & Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-6 wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <div class="left-image">
+                        <img src="assets/images/service05.png" alt="Workspace Desktop">
+                        <div class="info">
+                            <div class="inner-content">
+                                <h4>FACILITY MANAGEMENT</h4>
+                                <p>
+                                    Maintain peak operational efficiency with our facility management services. We ensure your facilities operate smoothlyand safely while you focus on your core business activities.
+                                </p>
+                                 <p>
+                                     We offer services like janitoral services, procurement services, maintenance services etc.
+                                </p>
+                                <div class="main-blue-button">
+                                    <a href="#">Learn More & Order</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Portfolio -->
+    <div id="portfolio" class="our-portfolio section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="section-heading wow bounceIn" data-wow-duration="1s" data-wow-delay="0.2s">
+                        <h2>See What Our <em>Clients</em> <span>Love</span> About Us</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                
+                <div class="col-lg-3 col-sm-6">
+                  
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                            
+                            
+                            
+                            <div>
+    <img src="assets/images/client-testimonial1.png" class="testimony" alt="" style="border-radius: 30px;">
+</div>
+                            
+                        </div>
+                    
+                </div>
+                
+                <div class="col-lg-3 col-sm-6">
+                  
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                            
+                            
+                            
+                            <div>
+    <img src="assets/images/client-testimonial2.png" class="testimony" alt="" style="border-radius: 30px;">
+</div>
+                            
+                        </div>
+                    
+                </div>
+                
+               <div class="col-lg-3 col-sm-6">
+                  
+                        <div class="item wow bounceInUp" data-wow-duration="1s" data-wow-delay="0.3s">
+                            
+                            
+                            
+                            <div>
+    <img src="assets/images/client-testimonial3.png" class="testimony" alt="" style="border-radius: 30px;">
+</div>
+                            
+                        </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact -->
+    <div id="contact" class="contact-us section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                    <div class="section-heading">
+                        <h2>Feel Free To Send Us a Message</h2>
+                        
+                        <div class="phone-info">
+                            <h4>You can also email us at: <span><i class="fa fa-envelope"></i> <a href="mailto:info@codelikewyna.com.ng">info@codelikewyna.com.ng</a></span></h4>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+                    <form id="contact" action="" method="post">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <fieldset>
+                                    <input type="text" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                                </fieldset>
+                            </div>
+                           
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <input type="email" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <textarea name="message" class="form-control" id="message" placeholder="Message" required></textarea>
+                                </fieldset>
+                            </div>
+                            <div class="col-lg-12">
+                                <fieldset>
+                                    <button type="submit" id="form-submit" class="main-button">Send Message</button>
+                                </fieldset>
+                            </div>
+                        </div>
+                        <div class="contact-dec">
+                            <img src="assets/images/contact-decoration.png" alt="">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('contact').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+            
+            const whatsappMessage = `Hello! My name is ${name}.%0A%0AEmail: ${email}%0A%0AMessage: ${message}`;
+            const whatsappUrl = `https://wa.me/2348166993801?text=${whatsappMessage}`;
+            
+            window.open(whatsappUrl, '_blank');
+        });
+    </script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+                    <p>© Copyright 2025 Ideal Edge Investment. All Rights Reserved.<br>
+                    Website Developed by: <a rel="nofollow" href="https://codelikewyna.com.ng">CodeLikeWyna Tech</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/animation.js"></script>
+    <script src="assets/js/imagesloaded.js"></script>
+    <script src="assets/js/templatemo-custom.js"></script>
+</body>
+</html>
